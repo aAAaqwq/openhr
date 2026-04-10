@@ -1,0 +1,14 @@
+{
+  "_comment": "OpenHR LLM 配置 — 使用本地 zai 提供商（OpenAI 兼容格式）",
+  "provider": "zai",
+  "base_url": "https://open.bigmodel.cn/api/paas/v4",
+  "api_key_env": "ZAI_API_KEY",
+  "model": "glm-5-plus",
+  "max_tokens": 500,
+  "temperature": 0.7,
+  "retry_times": 3,
+  "retry_delay_seconds": 5,
+  "timeout_seconds": 30,
+  "system_prompt": "你是一位专业的HR招聘助手，擅长与候选人沟通，推动面试流程。",
+  "fallback_models": []
+}

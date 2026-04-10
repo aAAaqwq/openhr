@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pos_1_1001",
+    "name": "Python后端开发工程师",
+    "department": "技术部-后端组",
+    "skills": ["Python", "Django", "FastAPI", "PostgreSQL", "Redis", "Docker", "Git"],
+    "experience_years": "3-5年",
+    "education": "本科及以上",
+    "salary_range": "25k-40k",
+    "location": "北京市朝阳区望京SOHO",
+    "description": "负责公司核心业务后端系统开发，维护和优化现有服务，提升系统性能和稳定性。",
+    "keywords": ["Python", "后端", "Django", "API", "服务器端"],
+    "exclude_keywords": ["前端", "HTML", "CSS", "JavaScript", "PHP", "Java", "C++"]
+  },
+  {
+    "id": "pos_2_2034",
+    "name": "前端开发工程师",
+    "department": "技术部-前端组",
+    "skills": ["Vue.js", "React", "TypeScript", "JavaScript", "CSS", "Webpack", "Node.js"],
+    "experience_years": "2-4年",
+    "education": "本科及以上",
+    "salary_range": "20k-35k",
+    "location": "北京市朝阳区望京SOHO",
+    "description": "负责公司产品前端开发，与UI设计师和产品经理紧密协作，实现高质量的用户界面和交互体验。",
+    "keywords": ["前端", "Vue", "React", "JavaScript", "界面开发"],
+    "exclude_keywords": ["后端", "Python", "Java", "数据库", "SQL"]
+  },
+  {
+    "id": "pos_3_3156",
+    "name": "全栈开发工程师",
+    "department": "技术部-平台组",
+    "skills": ["Python", "JavaScript", "Vue.js", "PostgreSQL", "Docker", "AWS", "REST API"],
+    "experience_years": "4-6年",
+    "education": "本科及以上",
+    "salary_range": "30k-50k",
+    "location": "北京市海淀区中关村软件园",
+    "description": "负责公司全栈业务开发，独立完成从前端到后端的完整功能实现，参与技术架构设计和优化。",
+    "keywords": ["全栈", "前后端", "Python", "Vue", "Full Stack"],
+    "exclude_keywords": ["仅前端", "仅后端", "移动端", "iOS", "Android"]
+  },
+  {
+    "id": "pos_4_4287",
+    "name": "测试开发工程师",
+    "department": "技术部-质量组",
+    "skills": ["Python", "Selenium", "Postman", "JMeter", "MySQL", "Docker", "CI/CD", "自动化测试"],
+    "experience_years": "2-4年",
+    "education": "本科及以上",
+    "salary_range": "18k-30k",
+    "location": "北京市朝阳区望京SOHO",
+    "description": "负责公司产品测试工作，设计和开发自动化测试框架，提升测试效率和质量。",
+    "keywords": ["测试", "QA", "自动化", "Test", "Quality"],
+    "exclude_keywords": ["前端", "UI设计", "产品经理", "运维"]
+  },
+  {
+    "id": "pos_5_5392",
+    "name": "运维开发工程师",
+    "department": "技术部-基础架构组",
+    "skills": ["Linux", "Docker", "Kubernetes", "Python", "Shell", "AWS", "Terraform", "Prometheus"],
+    "experience_years": "3-5年",
+    "education": "本科及以上",
+    "salary_range": "25k-42k",
+    "location": "北京市海淀区中关村软件园",
+    "description": "负责公司云基础设施建设和维护，设计和实现自动化运维平台，保障服务高可用。",
+    "keywords": ["运维", "DevOps", "SRE", "云原生", "K8s"],
+    "exclude_keywords": ["前端", "UI设计", "产品经理", "数据分析师"]
+  }
+]

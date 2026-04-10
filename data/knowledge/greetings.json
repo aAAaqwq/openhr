@@ -1,0 +1,98 @@
+[
+  {
+    "id": "greet_1_1001",
+    "text": "您好 {name}，我是贵公司的 HR，看到您对 {position} 岗位很感兴趣，想和您详细聊聊~",
+    "tags": ["热情", "带名字", "主动邀约"],
+    "priority": 10,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_2_2034",
+    "text": "Hi {name}，您的简历和 {position} 岗位非常匹配，方便聊几句吗？",
+    "tags": ["简洁", "精准匹配", "英文腔"],
+    "priority": 9,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_3_3156",
+    "text": "您好！看到您的经历，感觉您很适合我们的 {position} 岗位，请问有兴趣了解一下吗？",
+    "tags": ["友好", "询问意向"],
+    "priority": 8,
+    "enabled": true,
+    "variables": ["position"]
+  },
+  {
+    "id": "greet_4_4287",
+    "text": "{name} 您好，我们是 {position} 招聘团队。您的背景引起了我们的注意，方便聊聊吗？",
+    "tags": ["正式", "团队名义", "官方感"],
+    "priority": 7,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_5_5392",
+    "text": "Hi，看到您的技术栈和我们 {position} 岗位很契合，有时间聊聊吗？",
+    "tags": ["技术导向", "简洁直接"],
+    "priority": 8,
+    "enabled": true,
+    "variables": ["position"]
+  },
+  {
+    "id": "greet_6_6418",
+    "text": "您好 {name}，贵公司的招聘需求和我们团队很匹配，希望有机会详细交流一下 {position} 岗位~",
+    "tags": ["友好", "带名字", "强调交流"],
+    "priority": 7,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_7_7521",
+    "text": "{name}，看到您的项目经历非常丰富，我们 {position} 岗位正在招聘，您有兴趣加入我们吗？",
+    "tags": ["项目导向", "邀请加入"],
+    "priority": 6,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_8_8634",
+    "text": "您好！我们在找 {position} 方向的人才，您的背景看起来很合适，方便聊聊吗？",
+    "tags": ["方向导向", "简洁"],
+    "priority": 6,
+    "enabled": true,
+    "variables": ["position"]
+  },
+  {
+    "id": "greet_9_9745",
+    "text": "Hi {name}，发现您的经历和 {position} 高度匹配，期待和您进一步沟通~",
+    "tags": ["精准", "期待感"],
+    "priority": 7,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_10_1087",
+    "text": "您好 {name}，我们 {position} 团队正在扩充人手，看到您的简历非常匹配，冒昧打扰，方便的话聊聊？",
+    "tags": ["冒昧打扰", "团队名义", "请求方便"],
+    "priority": 5,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_11_2198",
+    "text": "{name} 您好！{position} 岗位正在热招中，看您的经历很适合，有没有兴趣了解下？",
+    "tags": ["热招", "问句式"],
+    "priority": 5,
+    "enabled": true,
+    "variables": ["name", "position"]
+  },
+  {
+    "id": "greet_12_3209",
+    "text": "Hi，看到您有丰富的 {position} 经验，我们团队正好需要这样的人才，约个时间聊聊？",
+    "tags": ["经验导向", "约时间"],
+    "priority": 6,
+    "enabled": true,
+    "variables": ["position"]
+  }
+]

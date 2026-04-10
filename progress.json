@@ -1,0 +1,96 @@
+{
+  "project": {
+    "name": "OpenHR 自动化招聘智能体",
+    "path": "~/clawd/projects/openhr/",
+    "startedAt": "2026-04-07T19:15:00+08:00",
+    "startedBy": "Daniel",
+    "cronJobId": "e862826b-af58-4c08-86d5-89886018f973"
+  },
+  "config": {
+    "intervalMs": 900000,
+    "maxRounds": 20,
+    "maxRetriesPerCriterion": 3,
+    "acceptanceFile": "acceptance-criteria.md"
+  },
+  "status": "completed",
+  "currentRound": 5,
+  "completedAt": "2026-04-08T00:18:00+08:00",
+  "criteria": [
+    {
+      "id": "c1", "status": "passed", "passedAt": "2026-04-07T22:26:00+08:00",
+      "description": "Boss直聘登录模块"
+    },
+    {
+      "id": "c2", "status": "passed", "passedAt": "2026-04-07T22:55:00+08:00",
+      "description": "风控对抗基础模块"
+    },
+    {
+      "id": "c3", "status": "passed", "passedAt": "2026-04-08T00:18:00+08:00",
+      "description": "主动打招呼模块"
+    },
+    {
+      "id": "c4", "status": "passed", "passedAt": "2026-04-07T22:36:00+08:00",
+      "description": "简历解析 + 飞书多维表格"
+    },
+    {
+      "id": "c5", "status": "passed", "passedAt": "2026-04-08T00:16:00+08:00",
+      "description": "智能聊天跟进引擎"
+    },
+    {
+      "id": "c6", "status": "passed", "passedAt": "2026-04-07T22:58:00+08:00",
+      "description": "知识库系统"
+    },
+    {
+      "id": "c7", "status": "passed", "passedAt": "2026-04-07T21:53:00+08:00",
+      "description": "参考文档完备"
+    }
+  ],
+  "blockers": [],
+  "history": [
+    {
+      "round": 1,
+      "timestamp": "2026-04-07T19:18:00+08:00",
+      "dispatched": ["c1 → code", "c2 → code", "c7 → research"],
+      "passed": [],
+      "newBlockers": [],
+      "skipped": ["c6 (code在忙)", "c3 (依赖c1+c2)", "c4 (依赖c1)", "c5 (依赖c1+c2)"],
+      "summary": "首轮：并行派发 c1+c2 给小code，c7 给小research"
+    },
+    {
+      "round": 2,
+      "timestamp": "2026-04-07T21:53:00+08:00",
+      "dispatched": ["c1 → code (retry 1)", "c2 → code (retry 1)", "c6 → code (new)"],
+      "passed": ["c7 (references全齐)"],
+      "newBlockers": [],
+      "skipped": ["c3 (依赖c1+c2未通过)", "c4 (依赖c1未通过)", "c5 (依赖c1+c2未通过)"],
+      "summary": "R2: c7✅。c1/c2首轮未产出，重新派发+c6新派发。"
+    },
+    {
+      "round": 3,
+      "timestamp": "2026-04-07T22:26:00+08:00",
+      "dispatched": ["c4 → code (c1 passed解锁)"],
+      "passed": ["c1 (boss_login.py+SKILL.md全齐)"],
+      "newBlockers": [],
+      "skipped": ["c2 (子任务仍运行)", "c6 (30min无产出⚠️)", "c3 (等c2)", "c5 (等c2)"],
+      "summary": "R3: c1✅, 解锁c4并派发。"
+    },
+    {
+      "round": 4,
+      "timestamp": "2026-04-07T22:53:00+08:00",
+      "dispatched": ["c2 → code (补SKILL.md)", "c6 → code (全量重做)"],
+      "passed": ["c4 (resume_parser+feishu_upload全齐)"],
+      "newBlockers": [],
+      "skipped": ["c3 (等c2)", "c5 (等c2)"],
+      "summary": "R4: c4✅。Kill旧subagent，c2补SKILL.md+c6重做(minimax)。"
+    },
+    {
+      "round": 5,
+      "timestamp": "2026-04-07T22:58:00+08:00",
+      "dispatched": ["c3 → code", "c5 → code"],
+      "passed": ["c2 (SKILL.md补完)", "c6 (knowledge_base全量完成)", "c3 (boss_greet.py 941行)", "c5 (chat_engine.py 44KB)"],
+      "newBlockers": [],
+      "skipped": [],
+      "summary": "R5: 全部7/7通过✅！总耗时~5小时（19:15→00:18）。项目完成。"
+    }
+  ]
+}

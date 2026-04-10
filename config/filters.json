@@ -1,0 +1,6 @@
+{
+  "education": ["本科", "硕士"],
+  "experience_years": {"min": 1, "max": 10},
+  "salary_range": {"min": 5000, "max": 30000},
+  "filter_mode": "all"
+}

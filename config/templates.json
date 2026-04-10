@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "description": "Boss直聘主动打招呼话术模板配置",
+  "templates": [
+    {
+      "id": "tpl_warm_professional",
+      "style": "热情专业型",
+      "text": "您好 {name}，我是 {company} 的 HR 猎手。看到您的简历背景和我们正在招聘的 {position} 岗位非常匹配，特别是在 {skill} 方面。方便聊聊吗？期待您的回复～",
+      "variables": ["name", "company", "position", "skill"],
+      "tags": ["热情", "专业", "个性化"],
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "id": "tpl_brief_concise",
+      "style": "简洁直入型",
+      "text": "你好 {name}，我们正在招聘 {position}，你的经历很符合要求，有兴趣聊聊吗？",
+      "variables": ["name", "position"],
+      "tags": ["简洁", "高效"],
+      "priority": 8,
+      "enabled": true
+    },
+    {
+      "id": "tpl_friendly_casual",
+      "style": "友好随和型",
+      "text": "嗨 {name}～看到你在 {position} 领域的经验，很感兴趣！我们团队正在招人，氛围好、成长快，有兴趣了解一下吗？",
+      "variables": ["name", "position"],
+      "tags": ["友好", "随和", "轻松"],
+      "priority": 7,
+      "enabled": true
+    },
+    {
+      "id": "tpl_data_driven",
+      "style": "数据亮点型",
+      "text": "{name} 您好，我注意到您在 {skill} 方面有扎实的项目经验。我们 {position} 岗位正在热招，薪酬区间 {salary}，方便详细聊聊吗？",
+      "variables": ["name", "skill", "position", "salary"],
+      "tags": ["数据", "精准", "高匹配"],
+      "priority": 9,
+      "enabled": true
+    },
+    {
+      "id": "tpl_urgent_fill",
+      "style": "急招强调型",
+      "text": "您好 {name}，我们 {position} 岗位正在急招！您的背景与岗位要求高度匹配，诚邀您加入我们。如有兴趣请回复，一起聊聊细节～",
+      "variables": ["name", "position"],
+      "tags": ["急招", "强调"],
+      "priority": 6,
+      "enabled": true
+    },
+    {
+      "id": "tpl_campus_fresh",
+      "style": "校招友好型",
+      "text": "你好呀 {name}！看到你是 {education} 在读/应届，我们公司提供完善的培养体系，{position} 岗位正在招聘对 {skill} 有热情的新伙伴，欢迎来聊聊～",
+      "variables": ["name", "education", "position", "skill"],
+      "tags": ["校招", "友好", "培养"],
+      "priority": 5,
+      "enabled": true
+    },
+    {
+      "id": "tpl_senior_elite",
+      "style": "资深精英型",
+      "text": "您好 {name}，我在寻找一位在 {position} 领域深耕多年的伙伴，您的经历让我印象深刻。我们团队正在扩张，期待与您深入交流。",
+      "variables": ["name", "position"],
+      "tags": ["精英", "高端", "资深"],
+      "priority": 7,
+      "enabled": true
+    },
+    {
+      "id": "tpl_cultivation_emphasis",
+      "style": "成长氛围型",
+      "text": "你好 {name}！我们团队非常注重成员成长，{position} 岗位不仅能发挥你在 {skill} 上的优势，还能获得广阔的发展空间。有兴趣了解一下吗？",
+      "variables": ["name", "position", "skill"],
+      "tags": ["成长", "氛围", "发展"],
+      "priority": 6,
+      "enabled": true
+    }
+  ],
+  "variable_legend": {
+    "name": "候选人姓名",
+    "position": "目标岗位名称",
+    "skill": "关键技能标签",
+    "company": "招聘方公司名称",
+    "salary": "薪资区间",
+    "education": "学历背景",
+    "experience": "工作年限"
+  }
+}

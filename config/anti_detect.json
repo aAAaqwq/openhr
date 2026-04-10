@@ -1,0 +1,42 @@
+{
+  "_comment": "OpenHR 风控对抗参数配置",
+  "delay_min": 5.0,
+  "delay_max": 15.0,
+  "delay_sigma": 2.5,
+  "daily_action_limit": 200,
+  "scroll_min": 300,
+  "scroll_max": 900,
+  "scroll_pause": [0.5, 2.0],
+  "captcha_keywords": [
+    "验证码",
+    "安全验证",
+    "拼图",
+    "滑动验证",
+    "请在下方",
+    "captcha",
+    "verify",
+    "验证",
+    "人机验证",
+    "请完成验证",
+    "tcaptcha",
+    "geetest"
+  ],
+  "warning_thresholds": {
+    "error_rate_pct": 30,
+    "consecutive_failures": 3,
+    "action_burst": 10,
+    "burst_window_sec": 30
+  },
+  "mouse": {
+    "bezier_steps_min": 8,
+    "bezier_steps_max": 16,
+    "hover_before_ms_min": 200,
+    "hover_before_ms_max": 900
+  },
+  "notify": {
+    "enabled": false,
+    "feishu_webhook": "",
+    "telegram_bot_token": "",
+    "telegram_chat_id": ""
+  }
+}

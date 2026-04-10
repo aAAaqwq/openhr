@@ -1,0 +1,72 @@
+[
+  {
+    "id": "feedback_1_1001",
+    "type": "interview_confirm",
+    "title": "面试时间确认",
+    "text": "您好 {name}，很高兴通知您面试通过！请于 {time} 到达 {address} 参加面试，收到请回复~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_2_2034",
+    "type": "interview_confirm",
+    "title": "视频面试邀请",
+    "text": "您好 {name}，您的简历让我们印象深刻！想邀请您参加 {time} 的视频面试，请确认是否方便，面试平台是 {platform}，房间号 {room_id}。",
+    "enabled": true
+  },
+  {
+    "id": "feedback_3_3156",
+    "type": "interview_reject",
+    "title": "简历未通过",
+    "text": "您好 {name}，感谢您投递 {position} 岗位！经过评估，您的背景与我们当前招聘需求不太匹配，祝您早日找到合适的工作机会~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_4_4287",
+    "type": "interview_reject",
+    "title": "面试未通过（委婉）",
+    "text": "您好 {name}，非常感谢您参加 {position} 的面试！您的能力给我们留下了深刻印象，但经过综合评估，这次暂时没有合适的机会。期待未来有缘再合作~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_5_5392",
+    "type": "interview_reject",
+    "title": "经验不符",
+    "text": "您好 {name}，感谢您对 {position} 岗位的兴趣！经过评估，这个岗位更倾向于有 {experience} 经验的候选人，您的工作经历与我们需求不太匹配。祝顺利~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_6_6418",
+    "type": "follow_up",
+    "title": "简历待跟进",
+    "text": "您好 {name}，我是 {company} 的 HR，之前和您聊过 {position} 岗位。方便问一下您现在还在看机会吗？想和您详细介绍一下我们的岗位~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_7_7521",
+    "type": "follow_up",
+    "title": "面试后跟进",
+    "text": "您好 {name}，面试结束后想再联系您确认一下：对我们的团队和岗位还有其他想了解的吗？如果一切 OK 的话，我们这边会尽快走 offer 审批流程~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_8_8634",
+    "type": "follow_up",
+    "title": "offer发放提醒",
+    "text": "您好 {name}，您的 offer 已经审批通过，请查收邮件中的 offer 附件。如有任何疑问随时联系我，请在 {deadline} 前回复确认是否接受~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_9_9745",
+    "type": "interview_confirm",
+    "title": "二面邀请",
+    "text": "您好 {name}，恭喜您通过了一面！我们想邀请您参加二面，时间是 {time}，形式是 {format}，面试官是团队的 {interviewer}。请确认是否方便参加~",
+    "enabled": true
+  },
+  {
+    "id": "feedback_10_1087",
+    "type": "follow_up",
+    "title": "候选人超时未回复",
+    "text": "您好 {name}，想跟进一下之前的消息。请问您对我们 {position} 岗位还有兴趣吗？如果暂时不匹配也没关系，祝您一切顺利~",
+    "enabled": true
+  }
+]

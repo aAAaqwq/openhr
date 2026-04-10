@@ -1,0 +1,115 @@
+{
+  "version": "2.0.0",
+  "description": "OpenHR 个性化打招呼模板（R3优化版）— 支持候选人名字、关键词匹配、经验年限、公司亮点",
+  "templates": [
+    {
+      "id": "tpl_keyword_professional",
+      "style": "关键词精准型",
+      "text": "你好 {name}！看到你在 {keyword} 方面有丰富的经验，我们的 {position_title} 岗位正好在找有你这样背景的人才。{company_advantage}，方便聊聊吗？",
+      "variables": ["name", "keyword", "position_title", "company_advantage"],
+      "tags": ["精准", "个性化", "关键词"],
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "id": "tpl_exp_years_highlight",
+      "style": "经验亮点型",
+      "text": "你好 {name}！{exp_years}年的行业经验真的很扎实，我们在招的 {position_title} 需要 {keyword} 方面的深度实践者，{position_highlight}。有兴趣详细聊聊吗？",
+      "variables": ["name", "exp_years", "position_title", "keyword", "position_highlight"],
+      "tags": ["经验", "深度", "精准匹配"],
+      "priority": 10,
+      "enabled": true
+    },
+    {
+      "id": "tpl_casual_friendly",
+      "style": "轻松亲和型",
+      "text": "Hi {name}～刷到你的简历了！你熟悉的 {keyword} 正是我们团队在用的技术栈，{position_title} 岗位 {salary_range}，{company_advantage}。要不要聊聊？",
+      "variables": ["name", "keyword", "position_title", "salary_range", "company_advantage"],
+      "tags": ["轻松", "亲和", "口语化"],
+      "priority": 9,
+      "enabled": true
+    },
+    {
+      "id": "tpl_salary_direct",
+      "style": "薪资直球型",
+      "text": "{name} 你好，我们 {position_title} 岗位正在热招，薪资 {salary_range}，需要 {keyword} 方面的经验。你的背景很匹配，{company_advantage}。方便聊聊吗？",
+      "variables": ["name", "position_title", "salary_range", "keyword", "company_advantage"],
+      "tags": ["薪资透明", "直球", "高效"],
+      "priority": 9,
+      "enabled": true
+    },
+    {
+      "id": "tpl_growth_appeal",
+      "style": "成长吸引型",
+      "text": "你好 {name}！你在 {keyword} 的经验很棒。我们 {position_title} 岗位有清晰的成长路径，{position_highlight}。如果你也在看新机会，聊几句？",
+      "variables": ["name", "keyword", "position_title", "position_highlight"],
+      "tags": ["成长", "机会", "吸引"],
+      "priority": 8,
+      "enabled": true
+    },
+    {
+      "id": "tpl_skill_match",
+      "style": "技能匹配型",
+      "text": "你好 {name}，看到你的技术栈里有 {keyword}，这正是我们 {position_title} 的核心要求。{company_advantage}，有兴趣深入聊聊岗位细节吗？",
+      "variables": ["name", "keyword", "position_title", "company_advantage"],
+      "tags": ["技能", "匹配", "技术导向"],
+      "priority": 8,
+      "enabled": true
+    },
+    {
+      "id": "tpl_brief_concise",
+      "style": "简洁高效型",
+      "text": "你好 {name}，我们正在招聘 {position_title}，你的 {keyword} 经验很符合。{salary_range}，有兴趣聊聊吗？",
+      "variables": ["name", "position_title", "keyword", "salary_range"],
+      "tags": ["简洁", "高效", "直接"],
+      "priority": 7,
+      "enabled": true
+    },
+    {
+      "id": "tpl_elite_headhunt",
+      "style": "精英猎头型",
+      "text": "{name} 您好，我一直在关注 {keyword} 领域的优秀人才。您的背景非常契合我们在找的 {position_title}，{position_highlight}。期待与您深入交流。",
+      "variables": ["name", "keyword", "position_title", "position_highlight"],
+      "tags": ["精英", "猎头", "高端"],
+      "priority": 7,
+      "enabled": true
+    },
+    {
+      "id": "tpl_team_culture",
+      "style": "团队文化型",
+      "text": "Hi {name}！看到你做过的 {keyword} 相关项目，感觉你一定会喜欢我们的团队。{position_title} 岗位，{company_advantage}，团队氛围轻松、技术导向。来聊聊？",
+      "variables": ["name", "keyword", "position_title", "company_advantage"],
+      "tags": ["文化", "氛围", "项目导向"],
+      "priority": 8,
+      "enabled": true
+    },
+    {
+      "id": "tpl_urgent_fill",
+      "style": "急招真诚型",
+      "text": "{name} 你好！我们 {position_title} 岗位正在急招，你的 {keyword} 经验恰好是我们需要的。{salary_range}，{company_advantage}。如果你在看机会，真诚期待聊聊～",
+      "variables": ["name", "position_title", "keyword", "salary_range", "company_advantage"],
+      "tags": ["急招", "真诚", "紧迫感"],
+      "priority": 6,
+      "enabled": true
+    }
+  ],
+  "variable_legend": {
+    "name": "候选人姓名",
+    "position_title": "目标岗位名称",
+    "keyword": "候选人匹配的关键技能（从简历中提取）",
+    "exp_years": "候选人工作年限",
+    "salary_range": "薪资区间（如 20K-40K）",
+    "company_advantage": "公司优势/卖点",
+    "position_highlight": "岗位亮点/吸引力",
+    "education": "候选人学历"
+  },
+  "selection_strategy": {
+    "description": "模板选择策略",
+    "rules": [
+      "优先使用包含 {keyword} 和 {exp_years} 的高匹配模板",
+      "如果候选人经验丰富(>5年)，倾向使用精英猎头型或经验亮点型",
+      "如果候选人较年轻(<3年)，使用成长吸引型或轻松亲和型",
+      "随机从 top-3 高优先级模板中选择，避免重复"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Playwright
+.playwright-mcp/
+
+# Runtime data (sensitive - cookies, chat logs)
+data/cookies/
+data/chat_logs/
+
+# Keep data structure with .gitkeep
+!data/**/.gitkeep
+
+# Config with secrets (keep templates, exclude actual secrets)
+# config/ files are committed but should NOT contain real API keys
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug
+data/debug/
+
+# Claude local
+.claude/

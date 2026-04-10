@@ -1,0 +1,40 @@
+{
+  "_comment": "飞书多维表格配置 — OpenHR c4",
+  "_说明": [
+    "app_id / app_secret: 从飞书开放平台应用凭证获取",
+    "app_secret: 请从 pass store 获取 (pass api/feishu-hanxing)，不要硬编码",
+    "app_token: 多维表格应用 token（创建多维表格后从 URL 获取）",
+    "table_id: 数据表 ID（进入多维表格后从 URL 获取）",
+    "field_mapping: 简历字段名 → 飞书多维表格列名（请按实际列名填写）"
+  ],
+  "_创建多维表格步骤": [
+    "1. 打开飞书 App → 工作台 → 多维表格 → 创建",
+    "2. 创建后，从 URL 复制 app_token：feishu.cn/base/{app_token}?table={table_id}",
+    "3. 进入表格，创建列，列名与 field_mapping 中的中文名一致",
+    "4. 推荐列类型：姓名/手机号→单行文本，学历→单选，工作年限→数字，技能标签→多选，跟进状态→单选，录入时间→创建时间"
+  ],
+  "hanxing": {
+    "app_id": "cli_a9f758c0efa2dcc4",
+    "app_secret": "从pass获取: pass api/feishu-hanxing",
+    "app_token": "填入多维表格 app_token（格式：Basqxxxxxx）",
+    "table_id": "填入数据表 ID（格式：tblxxxxxx）",
+    "field_mapping": {
+      "name": "姓名",
+      "age_gender": "年龄/性别",
+      "education": "学历",
+      "experience": "工作经历",
+      "latest_company": "最近公司",
+      "latest_title": "最近岗位",
+      "skills": "技能标签",
+      "expected_salary": "期望薪资",
+      "phone": "手机号",
+      "source": "来源平台",
+      "status": "沟通状态",
+      "created_at": "录入时间",
+      "dedup_key": "去重Key",
+      "self_summary": "自我评价",
+      "project_summary": "项目经历",
+      "boss_url": "Boss链接"
+    }
+  }
+}
